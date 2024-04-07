@@ -1,0 +1,92 @@
+/* Третий блок Кастом ПК*/
+
+body {
+    background-color: #dddddd;
+  }
+  
+header h1 {
+    font-size: 48px; /* Изменение размера шрифта */
+    font-family: "Raleway", sans-serif;
+  }
+  
+header {
+    background-color: #222; /* Темный фон заголовка */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+h1 {
+  margin: 0;
+  }
+  
+#customization {
+    text-align: center; /* Центрирование содержимого */
+    margin-top: 75px;
+  }
+  
+.pc-custom {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+.pc-custom img {
+    width: 500px; /* Ширина изображения */
+    height: auto; /* Автоматическое определение высоты */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+  }
+
+
+/*Button*/
+
+button {
+	font-size: 30px;
+	padding: 10px 30px;
+	margin: 10px;
+	border: 0;
+	cursor: pointer;
+	color: black;
+	border-radius: 10px;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+
+button::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0;
+}
+
+.button-five {
+	background: white;
+	color: black;
+	transform: perspective(1px) translateZ(0);
+	transition: 0.4s;
+}
+
+.button-five::before {
+	background: rgb(20, 120, 255);
+	clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.button-five:hover::before {
+	clip-path: polygon(25% -70%, 75% -70%, 120% 50%, 75% 170%, 25% 170%, -20% 50%);
+}
+
+.button-five:hover {
+	color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.button_cont {
+  margin-top: 75px;
+  text-align: center;
+}

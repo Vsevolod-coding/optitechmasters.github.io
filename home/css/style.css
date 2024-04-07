@@ -1,0 +1,262 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+        background-color: #222; /* Темный фон заголовка */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  header h1 {
+    font-size: 48px; /* Изменение размера шрифта */
+  }
+  
+  section h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px; /* Изменение размера шрифта */
+  }
+
+  .subscribe-btn {
+    display: inline-block;
+    background-color: #d12626;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.18);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  
+  .subscribe-btn:hover, .subscribe-btn:focus, .subscribe-btn:active{
+    box-shadow: 0 0 20px rgba(185, 5, 5, 0.633);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .container1 {
+    background-color: #111; /* Темно-серый фон для контейнера "container2" */
+    text-align: center; /* Центрирование текста внутри контейнера по горизонтали */
+    padding: 1px;
+    max-width: 300px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+    border-radius: 10px;
+  }
+  
+  .container2 {
+    background-color: #111; /* Темно-серый фон для контейнера "container2" */
+    text-align: center; /* Центрирование текста внутри контейнера по горизонтали */
+    padding: 1px;
+    max-width: 300px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+    border-radius: 10px;
+  }
+  
+  .container3 {
+    background-color: #111; /* Темно-серый фон для контейнера "container2" */
+    padding: 1px;
+    max-width: 450px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+    border-radius: 10px;
+  }
+
+  #examples h2 {
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  #services h2 {
+    font-size: 36px; /* Изменение размера шрифта */
+    color: #fff;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  #about {
+    font-family: "Roboto", sans-serif;
+    background-color: #333; /* Темно-серый фон блока "Немного о нас" */
+    color: #fff; /* Белый цвет текста */
+    padding: 30px;
+    text-align: center;
+    font-size: 24px; 
+    font-weight: 300;
+    border-bottom: 5px solid #222; /* Добавляем нижнее подчеркивание */
+  }
+  
+  #about h2 {
+    color: #fff; /* Белый цвет текста */
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    flex-wrap: wrap; /* Разрешение переноса элементов на новую строку */
+  }
+  
+  #services {
+    background-color: #333; /* Серый фон для блока "Наши услуги" */
+    padding: 20px;
+  }
+  
+  .service {
+    font-family: "Raleway", sans-serif;
+    width: 180px; /* Ширина блока */
+    padding: 1px;
+    margin: 15px;
+    text-align: center;
+    background-color: #606060; /* Темно-серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+
+  .service:hover, .service:focus, .service:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  #contact {
+    text-align: center;
+    background-color: #101010;
+  }
+  
+  #contact p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+  }
+  
+  #contact h2 {
+    color: #fff;
+  }
+
+  .gallery {
+    font-family: "Raleway", sans-serif;
+    padding: 5px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #282828;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.394);
+    cursor: pointer;
+    margin-top: 20px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+
+  .button_gal {
+    text-align: center;
+  }
+  
+  .gallery:hover, .gallery:focus, .gallery:active{
+    box-shadow: 0 0 20px rgba(22, 22, 22, 0.5);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .register {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin-top: 40px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  
+  .register:hover, .service:focus, .service:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+.gallery {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.gallery:before {
+    content: '';
+    background: linear-gradient(70deg, #ff0000, #ff6600, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.gallery:active {
+    color: #ffffff;
+}
+
+.gallery:hover:before {
+    opacity: 1;
+}
+
+.gallery:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 250% 0; }
+    100% { background-position: 0 0; }
+}

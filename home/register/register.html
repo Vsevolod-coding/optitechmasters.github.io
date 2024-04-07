@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<title>Заявка</title>
+<style>
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f5f5f5; /* Пастельный серый */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff; /* Белый фон формы */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.container h2 {
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Темно-серый */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #212121; /* Серый */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="comment"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Светло-серый */
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    background-color: #3bac3f; /* Зеленый */
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(1, 66, 24, 0.427);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, background-color, transform;
+    transition-property: box-shadow, background-color, transform;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+    box-shadow: 0 0 20px #056d0a(0, 95%, 37%, 0.633);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);    
+}
+
+.button_send {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.theme-toggle-wrapper {
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 36px; /* Увеличенный размер */
+    color: #666; /* Серый */
+}
+
+textarea {
+    font-family: "Raleway", sans-serif;;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Светло-серый */
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 200px; /* Высота поля для комментария */
+    resize: none; /* Отключение возможности изменения размера */
+}
+
+</style>
+<script>
+function togglePlaceholder(input) {
+    if (input.value.trim() === '') {
+        input.placeholder = "+7 (xxx) xxx-xx-xx"; // Показываем подсказку, если поле пустое
+    } else {
+        input.placeholder = ''; // Убираем подсказку, если поле не пустое
+    }
+}
+
+let isDarkMode = false;
+
+function toggleTheme(button) {
+    var body = document.body;
+    if (!isDarkMode) {
+        body.style.backgroundColor = "#222"; /* Черный фон */
+        button.innerHTML = '<span style="font-size: 36px;">🌙</span>'; // Луна
+    } else {
+        body.style.backgroundColor = "#f5f5f5"; /* Серый фон */
+        button.innerHTML = '<span style="font-size: 36px;">🌞</span>'; // Солнце
+    }
+    isDarkMode = !isDarkMode;
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Оставьте заявку</h2>
+
+    <form action="Error404/error404.html" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required autocomplete="off">
+
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" oninput="togglePlaceholder(this)" placeholder="+7 (xxx) xxx-xx-xx" required autocomplete="off">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="off">
+
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" name="comment" required autocomplete="off"></textarea>
+
+        <div class="button_send">
+            <input type="submit" value="ОТПРАВИТЬ">
+        </div>
+
+    </form>
+
+    <div class="theme-toggle-wrapper">
+        <button class="theme-toggle" onclick="toggleTheme(this)"><span style="font-size: 36px;">🌞</span></button>
+    </div>
+</div>
+
+</body>
+</html>

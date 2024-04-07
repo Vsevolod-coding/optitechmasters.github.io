@@ -1,0 +1,154 @@
+body {
+    background-color: #dddddd;
+  }
+
+header h1 {
+    font-size: 48px; /* Изменение размера шрифта */
+    font-family: "Raleway", sans-serif;
+  }
+  
+header {
+    background-color: #222; /* Темный фон заголовка */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+}
+
+#optimize img{
+    width: 600px; /* Ширина изображения */
+    height: auto; /* Автоматическое определение высоты */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    margin: 50px;
+}
+
+#optimize {
+    text-align: center;
+}
+
+.about_optomize {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    padding: 20px; /* Отступы слева и справа */
+    border-left: 5px solid #222; /* Линия слева */
+    border-right: 5px solid #222; /* Линия справа */
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    max-width: 800px; /* Максимальная ширина контейнера */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.tile p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+.how_optimize {
+    background-color: #111; /* Темно-серый фон для контейнера "container2" */
+    text-align: center; /* Центрирование текста внутри контейнера по горизонтали */
+    padding: 1px;
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 50px;
+  }
+
+.tile {
+    width: calc(33.33% - 35px); /* Ширина плашки с учетом расстояния между ними */
+    margin-bottom: 40px; /* Расстояние между плашками */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #efefef; /* фон плашек */
+    color: #000000; /* Белый цвет текста */
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.5); /* Тень */
+}
+
+h3 {
+    font-size: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    text-align: left; /* Изменено на выравнивание по левому краю */
+    margin-top: 0;
+    margin-bottom: 10px; /* Добавлено небольшое расстояние между заголовком и текстом */
+}
+
+.emoji {
+    font-size: 48px; /* Размер смайлика */
+    margin-right: 10px; /* Добавим немного отступа между смайликом и текстом */
+    border-radius: 30%; /* Скругленные края для создания эффекта круга */
+    padding: 5px; /* Небольшой внутренний отступ */
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
+}
+
+
+
+/*Button*/
+
+button {
+	font-size: 30px;
+	padding: 10px 30px;
+	margin: 10px;
+	border: 0;
+	cursor: pointer;
+	color: black;
+	border-radius: 10px;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(.86, .01, .15, .99);
+}
+
+button::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0;
+}
+
+.button-five {
+	background: white;
+	color: black;
+	transform: perspective(1px) translateZ(0);
+	transition: 0.4s;
+}
+
+.button-five::before {
+	background: rgb(20, 120, 255);
+	clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.button-five:hover::before {
+	clip-path: polygon(25% -70%, 75% -70%, 120% 50%, 75% 170%, 25% 170%, -20% 50%);
+}
+
+.button-five:hover {
+	color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.button_cont {
+  margin-top: 75px;
+  text-align: center;
+}

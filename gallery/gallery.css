@@ -1,0 +1,90 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  font-size: 48px; /* Изменение размера шрифта */
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  background-color: #222; /* Темный фон заголовка */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pc-image-container {
+  position: relative; /* Размещаем относительно */
+  margin: 0 30px;
+}
+
+.pc-image {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Добавляем тень */
+  transition: opacity 0.3s ease; /* Плавный переход прозрачности */
+}
+
+.hidden-text {
+  position: absolute; /* Позиционируем абсолютно */
+  bottom: 0; /* Положение по оси Y */
+  left: 0; /* Положение по оси X */
+  background-color: #ccc; /* Цвет фона */
+  padding: 10px; /* Отступы */
+  border-radius: 5px; /* Закругленные углы */
+  opacity: 0; /* Изначально прозрачный */
+  transition: bottom 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Анимация появления */
+}
+
+.pc-image-container:hover .hidden-text {
+  bottom: 30px; /* Поднимаем вниз */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); /* Добавляем тень */
+  opacity: 1; /* Изменяем прозрачность на 100% */
+}
+
+.pc-image:hover {
+  opacity: 0.85; /* При наведении понижаем прозрачность */
+}
+
+.hidden-text p {
+  font-size: 14px;
+  margin: 0; /* Убираем отступы */
+  line-height: 1.1; /* Устанавливаем высоту строки */
+  margin-bottom: 12px; /* Отступ снизу */
+}
+
+.hidden-text strong {
+  font-size: 16px;
+  font-weight: bold; /* Жирный шрифт для названий характеристик */
+}
+
+.gallery::-webkit-scrollbar {
+  height: 20px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #070b1a;
+  border-radius: 5px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background-color: #616166;
+  border-radius: 5px;
+}
